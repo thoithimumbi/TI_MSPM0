@@ -13,7 +13,7 @@ This project demonstrates full embedded hardware design workflow: system archite
 ## Preview
 
 ![Schematic](TI%20MSPMO.jpeg)
-![Schematic](TI%20MSPMO.png)
+![3D Image](TI%20MSPMO.png)
 
 ---
 
