@@ -9,9 +9,13 @@ The board integrates a USB-C power interface, on-board 3.3V regulation, USB-to-U
 This project demonstrates full embedded hardware design workflow: system architecture, schematic capture, peripheral integration, and production-aware design practices.
 
 ---
+
 ## Preview
 
 ![Schematic](TI%20MSPMO.jpeg)
+![Schematic](TI%20MSPMO.png)
+
+---
 
 ## System Architecture
 
