@@ -8,16 +8,12 @@ The board integrates a USB-C power interface, on-board 3.3V regulation, USB-to-U
 
 This project demonstrates full embedded hardware design workflow: system architecture, schematic capture, peripheral integration, and production-aware design practices.
 
----
-
 ## Preview
 
 ![Schematic](TI%20MSPM0.jpeg)
 <p align="center">
   <img src="TI MSPM0.png" alt="3D Image" width="400"/>
 </p>
-
----
 
 ## System Architecture
 
@@ -33,7 +29,6 @@ The system is divided into the following functional blocks:
 
 Each subsystem was designed with proper decoupling, signal routing consideration, and modular separation to ensure clean integration.
 
----
 
 ## Power Architecture
 
@@ -47,8 +42,6 @@ The board is powered via USB-C (5V VBUS). Power is regulated to 3.3V using an SP
 - USB device-mode CC configuration resistors  
 
 The LDO-based design prioritizes low noise and simplicity over switching efficiency, suitable for low-power embedded applications.
-
----
 
 ## Microcontroller Subsystem
 
@@ -69,8 +62,6 @@ At the core of the design is the MSPM0G3507 microcontroller featuring:
 
 This reflects production-grade MCU integration practices.
 
----
-
 ## Communication Interfaces
 
 ### USB–UART Interface
@@ -90,8 +81,6 @@ An onboard accelerometer is connected via I2C with:
 - Local decoupling capacitor  
 
 This enables motion-based embedded applications and sensor fusion experimentation.
-
----
 
 ## Debug & Programming Interface
 
