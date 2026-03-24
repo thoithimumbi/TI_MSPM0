@@ -1,6 +1,6 @@
 # Low-Power MSPM0 Sensor Node with USB-C Connectivity
 
-## 📌 System Overview
+## System Overview
 The board is powered via a USB-C connector, providing a primary 5V rail which is regulated to 3.3V for the MCU and onboard peripherals.
 
 The system integrates:
@@ -10,9 +10,9 @@ The system integrates:
 
 ---
 
-## 🧩 Functional Blocks
+## Functional Blocks
 
-### 🔌 Power Management
+### Power Management
 - **Input:** +5V from USB VBUS  
 - **Regulation:** SPX3819M5-L-3-3 LDO → 3.3V rail  
 - **Filtering:**
@@ -23,7 +23,7 @@ Decoupling capacitors are placed on both input and output stages to reduce noise
 
 ---
 
-### 🧠 Microcontroller (TI MSPM0G3507)
+### Microcontroller (TI MSPM0G3507)
 The MSPM0G3507PTR (LQFP-48) serves as the central processing unit.
 
 **Key configurations:**
@@ -40,7 +40,7 @@ The MSPM0G3507PTR (LQFP-48) serves as the central processing unit.
 
 ---
 
-### 🔄 USB-to-UART Interface
+### USB-to-UART Interface
 - **IC:** CH340E USB-to-serial converter  
 - **Function:** Bridges USB differential pair (D+ / D−) to MCU UART  
 
@@ -54,7 +54,7 @@ The MSPM0G3507PTR (LQFP-48) serves as the central processing unit.
 
 ---
 
-### 📡 Sensors & Peripherals
+### Sensors & Peripherals
 
 #### LIS2DH Accelerometer
 A low-power, high-resolution 3-axis accelerometer integrated on the 3.3V domain.
@@ -74,7 +74,7 @@ Supports interrupt-driven operation, enabling:
 
 ---
 
-## ⚙️ Technical Specifications
+## Technical Specifications
 
 | Component        | Description                                  |
 |------------------|----------------------------------------------|
@@ -88,7 +88,7 @@ Supports interrupt-driven operation, enabling:
 
 ---
 
-## 🔗 Connectivity Table (Key Signals)
+## Connectivity Table (Key Signals)
 
 | Function  | MCU Pin | Peripheral     |
 |----------|--------|----------------|
@@ -101,7 +101,7 @@ Supports interrupt-driven operation, enabling:
 
 ---
 
-## 🚀 Design Notes
+## Design Notes
 - External crystal ensures accurate UART baud rates and I2C timing  
 - Interrupt-driven accelerometer minimizes power consumption  
 - USB ESD protection improves reliability in real-world usage  
@@ -109,7 +109,7 @@ Supports interrupt-driven operation, enabling:
 
 ---
 
-## 📷 Media
+## Media
 ![Schematic](TI%20MSPM0.jpeg)
 <p align="center">
   <img src="TI MSPM0.png" alt="3D Image" width="400"/>
